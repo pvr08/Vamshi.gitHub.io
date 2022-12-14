@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking Form</title>
+    <link rel="stylesheet" href="./Athira_styles 2/airstyle(1).css">
+     
+</head>
+<body>
+  <header class="header">
+    <div><a href="#default" class="logo">PYB!</a>
+      <img src="logo2.png"></div>
+  
+    <div class="header-right">
+      
+      <a class="active header_items" href="#home">Flights</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="./chandrika html/main.html">Logout</a>
+
+</header>
+  <div class="first">
+    <section id="first" >
+
+
+      <a href="athira_index.html">
+        <h3>INDEX</h3>
+      </a>
+
+    </section>
+
+
+   </div>
+             
+  
+    <div class="container">
+
+        <form >
+          <div class="content-group">
+            <h1 class="text-center">Booking Page</h1>
+            <fieldset>
+              
+            <legend>BOOKING DETAILS</legend>
+            
+                <input type="text" id="from" placeholder="From" onkeyup="validateFrom()"> <div><span id="from-error"></span></div><br/>
+               
+                <input type="text" id="to" placeholder="To"  onkeyup="validateTo()"><br/>
+                <span id="To-error"></span>
+                <input type="date" id="date" placeholder="Departure Date">
+                <span >Departure date</span><br/>
+                <input type="text" id="time" placeholder="Departure Time"><br/>
+                <select  id="content-group" style="background: white;">
+                  
+                    <option value="">Preffered Airline</option>
+                    <option value="">Emirates</option>
+                    <option value="">Ethihad</option>
+                    <option value="">Alaska</option>
+                    <option value="">BritishAirways</option>
+                    <option value="">QatarAirways</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select  id="content-group" style="background: white">
+                    <option value="">Preffered Seating</option>
+                    <option value="">Economy Class</option>
+                    <option value="">Business Class</option>
+                    <option value="">First Class</option>
+                </select>
+               
+
+                <div class="content-group">
+                    <input type="number" id="content-group" placeholder="Adult">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="content-group" placeholder="Children(2-11years)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="content-group" placeholder="infant(under 2years)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+
+               
+
+                
+                  <input type="date" id="content-group1" placeholder="Return Date">
+                    <span >Return date</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="content-group" placeholder="Return time">
+                  
+                </div>
+              
+              </fieldset>
+             
+
+                <div id="content">
+                  <fieldset>
+              
+                    <legend>PERSONAL DETAILS</legend>
+                    <input type="text" id="contact-name" placeholder="FullName" onkeyup="validateName()">
+                    <div>  <span id="name-error"></span></div>
+                    <input type="text" id="contact-phone" placeholder="Phone Number" onkeyup="validatePhone()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="phone-error"></span>
+                    
+                    <input type="text" id="contact-email" placeholder="Enter Email" onkeyup="validateEmail()">
+                    <div><span id="email-error"></span></div>
+                    </div>
+                <button type="submit" id ="submit" onclick="return validateForm()">Submit Form</button>
+                <span id="submit-error"></span>
+                <button type="reset" class="btn btn-primary">Clear Form</button>
+            </div>
+        </form>
+      </fieldset>
+    </div>
+
+            
+            <section id="vedeo">
+<h2>Is this your First Journey then this Viedeo will Assist You</h2>
+              <iframe width="760" height="415" src="https://www.youtube.com/embed/KLy6VeC6yXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </section>
+<div> <h4> “Learning to fly an airplane taught me a way of thinking, an approach to problem-solving that was applicable and effective. Pilots are very methodical and meticulous, and artists tend not to be.”</h4></div>
+       
+<p id="mainquest">Frequently asked questions</p>
+    <div id="second">
+        
+        <div id="subquest"> 
+
+            How do I find the cheapest flights on Booking.com?
+        </div>
+        <p id="ans">
+            You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel
+        </p>
+    </div>
+    <div id="second">
+        
+      <div id="subquest"> 
+
+        Can I book one-way flights on pyb.com?
+      </div>
+      <p id="ans">
+        Yes, you can book one-way, round-trip, and multi-city flights on our site. </p>
+  </div>
+  <div id="second">
+        
+    <div id="subquest"> 
+
+      How far in advance can I book a flight
+    </div>
+    <p id="ans">
+      You can book a flight up to one year before your departure date </p>
+</div>
+<div id="second">
+        
+  <div id="subquest"> 
+
+    Does pyb.com charge credit card fees?
+  </div>
+  <p id="ans">
+      You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel
+  </p>
+</div>
+<div id="second">
+        
+  <div id="subquest"> 
+
+    What is a flexible ticket
+  </div>
+  <p id="ans">
+    A flexible ticket allows you to change your flight with the same airline by only paying the fare and tax difference. It can only be used for one confirmed change. You can add the flexible ticket when booking your flight
+  </p>
+</div>
+<div id="second">
+        
+  <div id="subquest"> 
+
+    Do flights get cheaper closer to departure?
+  </div>
+  <p id="ans">
+    Generally, flight prices are more likely to increase the closer you get to your flight date </p>
+</div>
+<div id="second">
+        
+  <div id="subquest"> 
+
+      How do I find the cheapest flights on Booking.com?
+  </div>
+  <p id="ans">
+      You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel
+  </p>
+</div>
+<div id="second">
+        
+  <div id="subquest"> 
+
+      How do I find the cheapest flights on Booking.com?
+  </div>
+  <p id="ans">
+      You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel
+  </p>
+</div>
+  </div>
+          
+      <script src="../js/booking.js"></script>
+      <footer class="footer">
+        <div class="footer_section">
+          <h1 class="name_page">Travel page</h1>
+          <h2>Contact</h2>
+          <address>
+            humber college north campus, mississuaga, Ontario<br>
+            <a class="link_f" href="randommail.ghj@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="list_f">
+          <li>
+            <h2 class="title_f">Social media handles</h2>
+            <ul class="ul_f">
+              <li>
+                <a href="#">twitter</a>
+              </li>
+      
+              <li>
+                <a href="#">facebook</a>
+              </li>
+                  
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <h2 class="title_f">Technology</h2>
+            
+            <ul class="ul_f ul_f--extra">
+              <li>
+                <a href="#">Hotels</a>
+              </li>
+              
+              <li>
+                <a href="#">busses</a>
+              </li>
+              
+              <li>
+                <a href="#">Trains</a>
+              </li>
+              
+              <li>
+                <a href="#">Hotel suggestions</a>
+              </li>
+              
+              <li>
+                <a href="#">Login</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <h2 class="title_f">Legal</h2>
+            
+            <ul class="ul_f">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">xyz</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="copy_f">
+          <p>&copy; some random information</p>
+        </div>
+      </footer>
+      <script src ="booking.js"></script> 
+</body>
+</html>

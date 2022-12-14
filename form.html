@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="./krunal_css/style1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#default" class="logo">PYB</a>
+      <img src="logo2.png" class="logo2" width="4%" height="4%">
+      <div class="header-right">
+        <a class="active header_items" href="index.html">Home</a>
+        <a class="header_items" href="#contact">Contact</a>
+        <a href="./chandrika html/main.html">Logout</a>
+      </div>
+</header>
+    <div class="form-container">
+      <form class="booking-form" id="reservations">
+        <div class="label-input">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" required />
+        </div><br><br>
+        <div class="label-input">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" required />
+        </div><br><br>
+        <div class="label-input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="label-input">
+          <label for="address">Phone Number</label>
+          <input type="text" name="address" id="address" required />
+        </div>
+        <div class="label-input">
+          <label for="rooms">Room Type</label>
+          <select name="rooms" id="rooms" required>
+            <option value="" disabled selected hidden>Select room type</option>
+            <option value="1">Luxery Room</option>
+            <option value="2">Standard Room</option>
+            <option value="2">Delux Room</option>
+            <option value="2">Normal Room</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="rooms">Rooms</label>
+          <select name="rooms" id="rooms" required>
+            <option value="" disabled selected hidden>Select number of rooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="adults">Adults</label>
+          <select name="adults" id="adults" required>
+            <option value="" disabled selected hidden>Select number of Guests</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="nights">Nights</label>
+          <select name="nights" id="nights" required>
+            <option value="" disabled selected hidden>Select number of nights</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+        <div class="label-input">
+         <lable>Arrival Date & Time</lable>
+         <input type="datetime-local" name="myArrivalDate" required />
+      </div>
+      <div class="label-input">
+        <lable>Departure Date</lable> 
+        <input type="month"> Day <input type="year" name="myDepartureDate" required />
+      </div>
+      
+      <div class="label-input">
+        <lable>Flight Number</lable> <input type="text" name="myFlightNum" required />
+      </div>
+      <div class="label-input">
+        <lable>Special Requests</lable> <br><textarea cols="72" rows="10" placeholder="Please write your requests"
+              name="myRequest"></textarea>
+      </div>
+      </form>
+      <div class="btn-container">
+        <button class="confirm-btn" onclick="window.location.href='payment.html'" form="reservations" >Confirm Reservation</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer_section">
+        <h1 class="name_page">Pack Your Bags (PYB)</h1>
+        <h2>Contact</h2>
+        <address>
+          Humber College North Campus, Toronto, Ontario<br>
+          <a class="link_f" href="randommail.ghj@gmail.com">Email Us</a>
+        </address>
+      </div>
+      
+      <ul class="list_f">
+        <li>
+          <h2 class="title_f">Social media handles</h2>
+          <ul class="ul_f">
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+    
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+                
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <h2 class="title_f">Technology</h2>
+          
+          <ul class="ul_f ul_f--extra">
+            <li>
+              <a href="#">Hotels</a>
+            </li>
+            
+            <li>
+              <a href="#">Buses</a>
+            </li>
+            
+            <li>
+              <a href="#">Trains</a>
+            </li>
+            
+            <li>
+              <a href="#">Hotel suggestions</a>
+            </li>
+            
+            <li>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <h2 class="title_f">Legal</h2>
+          
+          <ul class="ul_f">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            
+            <li>
+              <a href="#">xyz</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="copy_f">
+        <p>&copy; Pack Your Bags</p>
+      </div>
+    </footer>
+  </body>
+</html>

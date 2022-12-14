@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/main.css">
+    </head>
+    <body>
+        <header class="trains-header header">
+            <a href="#default" class="logo">PYB!</a>
+            <img src="../logo2.png" class="logo-1">
+              <div class="header-right">
+                
+                <a class="active header_items" href="#home">Trains</a>
+              <a href="../contact.html">Contact Us</a>
+              <a href="./main.html">Logout</a>
+              </div>
+        </header>
+        <div class="booking-main" id="booking">
+            <div id="booking" class="section">
+                <div class="section-center">
+                <div class="container">
+                <div class="row">
+                <div class="booking-form">
+                <div class="form-header">
+                <h1>Make your reservation</h1>
+                </div>
+                <form>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Country, ZIP, city...">
+                    <span class="form-label">Destination</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" type="date" required>
+                            <span class="form-label">Check In</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" type="date" required>
+                            <span class="form-label">Check out</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="" selected hidden>no of rooms</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                            <span class="form-label">Rooms</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="" selected hidden>no of adults</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                            <span class="form-label">Adults</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="" selected hidden>no of children</option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                            <span class="form-label">Children</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Enter your Email">
+                            <span class="form-label">Email</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" type="tel" placeholder="Enter you Phone">
+                            <span class="form-label">Phone</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button class="submit-btn" onclick="booking();">Book Now</button>
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div> 
+        </div>
+        <!-- <main id="confirm">
+            <div class="confirm">
+                <div class="confirmationimage" >
+                <img class="img_confirm" src="../images/orderconfirmation copy.jpg" alt="">
+                </div>
+                <p class="confirmation">Confirmation!!</p>
+               <div class="confirmation-details">
+                <h2>Thanks for feeding the needy</h2>
+                <h3>We have sent you an email with all the details of your booking and also you can track your booking using below order ID</h3>
+                <table class="order-details">
+                    <tr>
+                      <td>Order ID:-</td>
+                      <td>2278</td>
+                    </tr>
+                    <tr>
+                      <td>Email:-</td>
+                      <td id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>contact number:-</td>
+                        <td id="phone"></td>
+                    </tr>
+                  </table>
+               </div>
+            </div>
+        </main> -->
+        <footer class="trains-footer footer">
+            <div class="footer_section">
+              <h1 class="name_page">Travel page</h1>
+              <h2>Contact</h2>
+              <address>
+                humber college north campus, mississuaga, Ontario<br>
+                <a class="link_f" href="randommail.ghj@gmail.com">Email Us</a>
+              </address>
+            </div>
+            
+            <ul class="list_f">
+              <li>
+                <h2 class="title_f">Social media handles</h2>
+                <ul class="ul_f">
+                  <li><a href="#">twitter</a></li>
+                  <li><a href="#">facebook</a></li>   
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+              </li>
+              
+              <li>
+                <h2 class="title_f">Technology</h2>
+                <ul class="ul_f ul_f--extra">
+                  <li><a href="#">Hotels</a></li>
+                  <li><a href="#">busses</a></li>
+                  <li><a href="#">Trains</a></li>
+                  <li><a href="#">Hotel suggestions</a> </li>
+                  <li><a href="#">Login</a></li>
+                </ul>
+              </li>
+              
+              <li>
+                <h2 class="title_f">Legal</h2>
+                <ul class="ul_f">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a> </li>
+                  <li><a href="#">xyz</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="copy_f">
+              <p>&copy; some random information</p>
+            </div>
+          </footer>
+          <script src="../main.js"></script>
+    </body>
+</html>
